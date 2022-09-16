@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import Profile from "./components/Profile/Profile";
+import Skills from "./components/Skills/Skill";
+import Coding from "./components/Skills/Coding";
+import "./App.css";
+
+const skill = [
+  { id: "s1", Languages: " Html , Css , React" },
+  { id: "s2", framework: " React , jQuery , Bootstrap " },
+  { id: "s3", Languages: " C , C++ , Python " },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content">
+      <Header />
+      <Profile />
+
+      <Skills language={skill[0].Languages} framework={skill[1].framework} />
+
+      <Coding languages={skill[2].Languages} />
     </div>
   );
 }
