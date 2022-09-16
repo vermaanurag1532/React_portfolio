@@ -13,7 +13,6 @@ const ModalOverlay = (props) => {
 };
 
 const Modal = (props) => {
-  console.log(props.onClose);
   return (
     <div>
       <BackDrop onClose={props.onClose} />
