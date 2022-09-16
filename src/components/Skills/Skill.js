@@ -19,7 +19,7 @@ const Skills = (props) => {
 
   return (
     <div className="webd">
-      {projects && <Project onClose={projects} />}
+      {projects && <Project onClose={projects} props={setProjects} />}
       <h1> Web Development Tech Stack </h1>
       <h2> Languages: {props.language} </h2>
       <h2> Frameworks: {props.framework} </h2>

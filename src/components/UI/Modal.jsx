@@ -1,7 +1,7 @@
 import classes from "./Modal.module.css";
 
 const BackDrop = (props) => {
-  return <div className={classes.BackDrop} onClick={props.onClose} />;
+  return <div className={classes.backDrop} onClick={props.onClose} />;
 };
 
 const ModalOverlay = (props) => {
