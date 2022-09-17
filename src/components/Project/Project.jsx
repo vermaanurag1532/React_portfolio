@@ -3,7 +3,7 @@ import classes from "./Project.module.css";
 
 const Project = (props) => {
   return (
-    <Modal onClose={props.onClose}>
+    <Modal className={classes.holder} onClose={props.onClose}>
       <h1>Projects</h1>
       <div className={classes.container}>
         <div className={classes.project}>
@@ -25,7 +25,9 @@ const Project = (props) => {
           </ul>
         </div>
         <div>
-          <button>close</button>
+          <button className={classes.button} onClick={props.onConfirm}>
+            close
+          </button>
         </div>
       </div>
     </Modal>

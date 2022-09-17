@@ -1,14 +1,9 @@
-.holder {
-    height: 100vh;
-    width: 150%;
-}
-
 .container {
     display: grid;
     text-align: left;
 }
 
-.project {
+.participation {
     font-size: xx-large;
     font-weight: 500;
 }

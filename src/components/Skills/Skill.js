@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Project from "../Project/Project";
 import "./Skill.css";
-import Button from "../UI/Button";
 
 const Skills = (props) => {
   const [projects, setProjects] = useState(false);
@@ -17,19 +16,32 @@ const Skills = (props) => {
   //   console.log({ projects });
   // };
 
+  const projectHandler = () => {
+    setProjects(null);
+  };
+
   return (
     <div className="webd">
-      {projects && <Project onClose={projects} props={setProjects} />}
+      {projects && (
+        <Project
+          onClose={projects}
+          props={setProjects}
+          onConfirm={projectHandler}
+        />
+      )}
       <h1> Web Development Tech Stack </h1>
       <h2> Languages: {props.language} </h2>
       <h2> Frameworks: {props.framework} </h2>
-      <button
-        onClick={() => {
-          setProjectHandler();
-        }}
-      >
-        Projects{" "}
-      </button>
+      <div className="skills">
+        <button
+          className="project-button"
+          onClick={() => {
+            setProjectHandler();
+          }}
+        >
+          Projects
+        </button>
+      </div>
     </div>
   );
 };

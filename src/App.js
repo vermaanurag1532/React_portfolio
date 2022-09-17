@@ -15,9 +15,10 @@ function App() {
     <div className="content">
       <Header />
       <Profile />
-
-      <Skills language={skill[0].Languages} framework={skill[1].framework} />
-
+      <Skills
+        language={skill[0].Languages}
+        framework={skill[1].framework}
+      />{" "}
       <Coding languages={skill[2].Languages} />
     </div>
   );

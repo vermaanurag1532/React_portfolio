@@ -1,12 +1,11 @@
 import Modal from "../UI/Modal";
-import "./CP.css";
-// import classes from "./Project.module.css";
+import classes from "./CP.module.css";
 
 const CP = (props) => {
   return (
     <Modal onClose={props.onClose}>
-      <div className="participation">
-        <h1>Participations</h1>
+      <div className={classes.participation}>
+        <h2>Participations</h2>
         <ul>
           <li>
             SIH 2022 Internal Hackathon :
@@ -22,7 +21,9 @@ const CP = (props) => {
           </li>
         </ul>
       </div>
-      <button>close</button>
+      <button className={classes.button} onClick={props.onConfirm}>
+        close
+      </button>
     </Modal>
   );
 };

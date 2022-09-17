@@ -9,12 +9,23 @@ const Coding = (props) => {
     setParticipartions(true);
   };
 
+  const participationHandler = () => {
+    setParticipartions(null);
+  };
+
   return (
     <div className="code">
-      {participation && <CP />}
+      {participation && <CP onConfirm={participationHandler} />}
       <h1>Competitive Codiing</h1>
       <h2>Languages: {props.languages}</h2>
-      <button onClick={() => setParticipationHandler()}>Participation</button>
+      <div className="coding">
+        <button
+          className="coding-button"
+          onClick={() => setParticipationHandler()}
+        >
+          Participation
+        </button>
+      </div>
     </div>
   );
 };

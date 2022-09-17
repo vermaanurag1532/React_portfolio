@@ -18,13 +18,48 @@
     margin-bottom: 70px;
 }
 
-.content {
-    margin: 2%;
+.profile-h1 {
+    font-size: 60px;
+    padding-left: 3%;
 }
 
+.profile-h2 {
+    font-size: 60px;
+    padding-left: 3%;
+}
+
+.profile-h4 {
+    font-size: 25px;
+    padding: 3%;
+}
+
+.contact {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.linkdin {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+/* .content {
+    margin: 2%;
+} */
+
 .profile-pic {
-    width: 200%;
+    width: 160%;
     height: 50%;
-    object-fit: cover;
+    border-radius: 14px;
+    /* object-fit: cover; */
     overflow: hidden;
 }
